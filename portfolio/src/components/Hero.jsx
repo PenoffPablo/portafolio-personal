@@ -19,7 +19,7 @@ const Hero = () => {
                 </h1>
 
                 <p className="text-xl md:text-2xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-                    Junior Software Developer. Transformo ideas en código escalable.
+                    Software Developer. Transformo ideas en código escalable.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
