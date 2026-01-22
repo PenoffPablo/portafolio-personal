@@ -5,20 +5,20 @@ const Skills = () => {
         {
             category: "Frontend",
             technologies: [
-                { name: "React", level: "Avanzado" },
-                { name: "Tailwind CSS", level: "Intermedio" },
-                { name: "JavaScript (ES6+)", level: "Intermedio" },
-                { name: "HTML5 & CSS3", level: "Avanzado" },
+                { name: "React" },
+                { name: "Tailwind CSS" },
+                { name: "JavaScript (ES6+)" },
+                { name: "HTML5 & CSS3" },
             ]
         },
         {
             category: "Backend",
             technologies: [
-                { name: "Java", level: "Intermedio" },
-                { name: "Spring Boot", level: "Básico" },
-                { name: "Python", level: "Intermedio" },
-                { name: "Flask", level: "Básico" },
-                { name: "Node.js", level: "Básico" },
+                { name: "Java" },
+                { name: "Spring Boot" },
+                { name: "Python" },
+                { name: "Flask" },
+                { name: "Node.js" },
             ]
         },
         {
@@ -31,10 +31,10 @@ const Skills = () => {
         {
             category: "Herramientas & Otros",
             technologies: [
-                { name: "Git & GitHub", level: "Intermedio" },
-                { name: "VS Code", level: "Avanzado" },
-                { name: "Postman", level: "Intermedio" },
-                { name: "Scrum", level: "Intermedio" },
+                { name: "Git & GitHub" },
+                { name: "VS Code" },
+                { name: "Postman" },
+                { name: "Scrum" },
             ]
         }
     ];
@@ -59,13 +59,10 @@ const Skills = () => {
                         Stack tecnológico diverso. Me adapto a la herramienta adecuada para cada problema, ya sea SQL, NoSQL, Java o Python.
                     </p>
                 </div>
-
-                {/* CAMBIO CLAVE: Usamos grid-cols-2 en pantallas medianas para un layout 2x2 simétrico */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                     {skills.map((skillGroup, index) => (
                         <div key={index} className="bg-slate-900/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:border-blue-500/50 transition-colors duration-300">
                             <h3 className="text-xl font-bold text-white mb-6 border-b border-slate-700 pb-2 flex items-center gap-2">
-                                {/* Un pequeño detalle: condicional para iconos o colores según categoría si quisieras */}
                                 <span className="text-blue-500">#</span> {skillGroup.category}
                             </h3>
 
@@ -75,12 +72,6 @@ const Skills = () => {
                                         <span className="text-gray-300 font-medium group-hover:text-blue-400 transition-colors">
                                             {tech.name}
                                         </span>
-                                        {/* Indicador visual de nivel */}
-                                        <div className="flex gap-1">
-                                            <div className={`w-2 h-2 rounded-full ${['Básico', 'Intermedio', 'Avanzado'].includes(tech.level) ? 'bg-blue-500' : 'bg-slate-700'}`}></div>
-                                            <div className={`w-2 h-2 rounded-full ${['Intermedio', 'Avanzado'].includes(tech.level) ? 'bg-blue-500' : 'bg-slate-700'}`}></div>
-                                            <div className={`w-2 h-2 rounded-full ${['Avanzado'].includes(tech.level) ? 'bg-blue-500' : 'bg-slate-700'}`}></div>
-                                        </div>
                                     </div>
                                 ))}
                             </div>

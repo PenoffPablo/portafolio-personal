@@ -7,7 +7,7 @@ const Projects = () => {
             title: "Delonc Limpieza Profesional",
             description: "Web para empresa de servicios de limpieza con API de whatsapp para contactar con la empresa y presupuestar el servicio",
             tech: ["React", "Tailwind"],
-            image: "https://placehold.co/600x400/1e293b/FFFFFF/png?text=Delonc+Limpieza+Profesional",
+            image: "https://placehold.co/600x400/30BE5A/FFFFFF/png?text=Delonc+Limpieza+Profesional",
             url: "https://delonc-limpieza-profesional.netlify.app"
         },
         {
@@ -40,7 +40,7 @@ const Projects = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
                     {projects.map((project, index) => (
                         <div key={index} className="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/10 transition-all duration-300 transform hover:-translate-y-2 border border-gray-700 group">
 
