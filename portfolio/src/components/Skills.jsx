@@ -6,6 +6,7 @@ const Skills = () => {
             category: "Frontend",
             technologies: [
                 { name: "React" },
+                { name: "Next.js" },
                 { name: "Tailwind CSS" },
                 { name: "JavaScript (ES6+)" },
                 { name: "HTML5 & CSS3" },
@@ -15,7 +16,6 @@ const Skills = () => {
             category: "Backend",
             technologies: [
                 { name: "Java" },
-                { name: "Spring Boot" },
                 { name: "Python" },
                 { name: "Flask" },
                 { name: "Node.js" },
@@ -24,8 +24,8 @@ const Skills = () => {
         {
             category: "Bases de Datos",
             technologies: [
-                { name: "MySQL", level: "Intermedio" },
-                { name: "MongoDB", level: "Básico" },
+                { name: "MySQL" },
+                { name: "MongoDB" },
             ]
         },
         {
