@@ -24,10 +24,10 @@ const Hero = () => {
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <a
-                        href="#proyectos"
+                        href="#trabajos"
                         className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-bold transition-all hover:scale-105 shadow-lg shadow-blue-500/25 w-full sm:w-auto text-center cursor-pointer"
                     >
-                        Ver mis Proyectos
+                        Ver mis Trabajos
                     </a>
 
                     <a

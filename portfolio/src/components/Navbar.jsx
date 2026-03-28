@@ -28,10 +28,10 @@ const Navbar = () => {
                 <div className={`${isOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`}>
                     <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-700 rounded-lg bg-gray-800 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent">
                         <li>
-                            <a href="#" className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-500 md:p-0" aria-current="page">Inicio</a>
+                            <a href="#" className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-300 md:hover:text-blue-500 md:p-0 transition-colors" aria-current="page">Inicio</a>
                         </li>
                         <li>
-                            <a href="#proyectos" className="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 transition-colors">Proyectos</a>
+                            <a href="#trabajos" className="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 transition-colors">Trabajos</a>
                         </li>
                         <li>
                             <a href="#habilidades" className="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 transition-colors">Habilidades</a>
