@@ -5,8 +5,20 @@ import ImageCarousel from './ImageCarousel';
 const Projects = () => {
     const projects = [
         {
+            title: "G4 Company S.A",
+            description: "Plataforma integral de logística empresarial. Implementa generación de facturas en PDF, sincronización de base de datos offline y una arquitectura robusta para garantizar alta disponibilidad.",
+            tech: ["Next.js", "React", "TypeScript", "Tailwind"],
+            images: [
+                "g4-main.png",
+                "Bussiness-areas-g4.png",
+                "g4-about-us.png",
+                "global-vision-g4.png"
+            ],
+            url: "https://www.g4company.com"
+        },
+        {
             title: "Delonc Limpieza Profesional",
-            description: "Web para empresa de servicios de limpieza con API de whatsapp para contactar con la empresa y presupuestar el servicio",
+            description: "Landing page corporativa optimizada para conversión. Integra la API de WhatsApp Business para automatizar el contacto de clientes y agilizar la solicitud de presupuestos en tiempo real.",
             tech: ["React", "Tailwind"],
             images: [
                 "home-delonc.png",
@@ -16,7 +28,7 @@ const Projects = () => {
         },
         {
             title: "E-commerce ExtraRango",
-            description: "Sistema de gestión de pedidos y ventas. Manejo de carrito, lista de productos, API del precio del dolar, CRUD de productos y usuarios, generación de remitos.",
+            description: "Plataforma B2B con panel de administración. Incluye carrito dinámico, sincronización de precios vía API del dólar en tiempo real, gestión integral de inventario y generación de remitos.",
             tech: ["Next.js", "Tailwind", "MySQL", "Prisma"],
             images: [
                 "home-extrarango.png",
@@ -27,8 +39,8 @@ const Projects = () => {
             url: "https://www.extrarango.com"
         },
         {
-            title: "Portfolio para modelo de Runway",
-            description: "Portfolio creado con React y Tailwind CSS. Galería de imágenes e información sobre la modelo.",
+            title: "Portfolio de Modelaje Runway",
+            description: "Portfolio visual de alto rendimiento con enfoque en UI/UX. Incluye galería multimedia optimizada, animaciones fluidas y diseño completamente responsivo adaptado a dispositivos móviles.",
             tech: ["React", "Tailwind"],
             images: [
                 "portada-agus.png",
@@ -40,7 +52,7 @@ const Projects = () => {
 
     return (
         <section id="trabajos" className="py-20 bg-slate-900 text-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -52,7 +64,7 @@ const Projects = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {projects.map((project, index) => (
                         <div key={index} className="bg-slate-800 rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 transform hover:-translate-y-2 border border-slate-700/50 group h-full flex flex-col">
 
@@ -76,17 +88,29 @@ const Projects = () => {
                                     ))}
                                 </div>
 
-                                <a
-                                    href={project.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl shadow-lg transition-all font-semibold text-sm w-full hover:scale-[1.02] shadow-blue-600/20"
-                                >
-                                    Visitar Sitio
-                                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                    </svg>
-                                </a>
+                                {project.url ? (
+                                    <a
+                                        href={project.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl shadow-lg transition-all font-semibold text-sm w-full hover:scale-[1.02] shadow-blue-600/20"
+                                    >
+                                        Visitar Sitio
+                                        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                        </svg>
+                                    </a>
+                                ) : (
+                                    <span
+                                        className="inline-flex items-center justify-center gap-2 bg-slate-700/50 text-slate-400 px-5 py-2.5 rounded-xl border border-slate-600/50 font-semibold text-sm w-full cursor-not-allowed select-none"
+                                        title="Sistema Interno / Privado"
+                                    >
+                                        Sistema Privado
+                                        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                                        </svg>
+                                    </span>
+                                )}
                             </div>
                         </div>
                     ))}
