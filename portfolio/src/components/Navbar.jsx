@@ -34,6 +34,9 @@ const Navbar = () => {
                             <a href="#trabajos" className="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 transition-colors">Trabajos</a>
                         </li>
                         <li>
+                            <a href="#proyectos-universitarios" className="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-purple-500 md:p-0 transition-colors">Universidad</a>
+                        </li>
+                        <li>
                             <a href="#habilidades" className="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 transition-colors">Habilidades</a>
                         </li>
                         <li>
